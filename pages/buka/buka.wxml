@@ -1,0 +1,31 @@
+<!--7.补卡  --> 
+<view class='box'>
+  <!--补卡时间  -->
+  <view class="section">
+    <view class="section__title">补卡时间：{{code}}</view>
+  </view>
+
+  <!--补卡事由  -->
+  <view class='bukaResult'>
+    <label>
+      <view class='result'>补卡事由：</view>
+      <textarea auto-height='{{true}}' style='padding-top:{{detail}};padding-left:{{detail1}}' value="{{evaContent}}" bindinput='charChange' class='resultinput' type='text'></textarea>
+    </label>
+  </view>
+
+  <!--审批人  -->
+  <view class='shenpi'>
+    <image src='../images/shenpiren.png'></image>
+    <text>审批人</text>
+  </view>
+  <view class='addshenpi'>
+    <view class='spr' wx:for="{{arr}}" wx:for-item='item' wx:key = "index">
+      <image src='{{item.photo}}'></image>
+      <image class="close" src='../images/close.png' bindtap='remove' data-id='{{item.personId}}'></image>
+      <view>{{item.personName}}</view>
+    </view>
+    <image src='../images/addshenpiren.png' bindtap='shenpiren'></image>
+  </view>
+</view>
+<!--提交  -->
+<button hover-class='btn-hover' bindtap='TiJiao'>提交</button>

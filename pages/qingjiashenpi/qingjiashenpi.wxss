@@ -1,0 +1,152 @@
+/*8.2审批详情流程中  */
+.title{
+  height: 96rpx;
+  background-color: #e4f8f4;
+  line-height: 96rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.title .photo{
+  font-size: 16px;
+  color: #333;
+  margin-left:16px;
+}
+.title .photo image{
+  width: 50rpx;
+  height: 50rpx;
+  margin-right: 16rpx;
+  vertical-align: middle;
+}
+.title text{
+  font-size: 12px;
+  color: #999;
+  margin-right:16px;
+}
+.time {
+  font-size: 15px;
+  margin: 24px 0 12px 16px;
+}
+.result{
+  font-size: 15px;
+  margin:0 0 12px 16px;
+}
+/* 审批流程 */
+.dakaJiLuBox{
+  margin: 84rpx auto;
+}
+.dakaJiLuBox .dayjilu1{
+  position: relative;
+  background-color:#fefcf4;
+  padding-bottom:12px;
+  padding-top:12px;
+}
+.dakaJiLuBox .dayjilu1 .round{
+  width: 16rpx;
+  height: 16rpx;
+  border-radius: 50%;
+  background: #fbce46;
+  float:left;
+  margin:5px 16px 0 16px;
+}
+.dakaJiLuBox .dayjilu1 .middle{
+  /* float: left; */
+  margin-left: 7%;
+  /* margin-top: 24px; */
+  display: flex;
+  justify-content: space-between;
+}
+.dakaJiLuBox .dayjilu1 .middle .name{
+  font-size: 16px;
+  float:left;
+}
+.dakaJiLuBox .dayjilu1  .weizhi{
+  font-size: 12px;
+  color: #999;
+  margin-top:3px;
+  margin-right:20px;
+}
+.dakaJiLuBox .dayjilu1 .middle .gray{
+  font-size: 12px;
+  color: #fff;
+  width: 40px;
+  height: 16px;
+  background-color: #ccc;
+  border-radius:16rpx;
+  text-align: center;
+  margin-left:10px;
+  line-height: 16px;
+  margin-top: 3px;
+  float:left;
+}
+.dakaJiLuBox .dayjilu1 .middle .green{
+  font-size: 12px;
+  color: #fff;
+  width: 40px;
+  height: 16px;
+  background-color: #8bc34a;
+  border-radius:16rpx;
+  text-align: center;
+  margin-left:10px;
+  line-height: 16px;
+  margin-top: 3px;
+  float:left;
+}
+.dakaJiLuBox .dayjilu1 .middle .pink{
+  font-size: 12px;
+  color: #fff;
+  width: 40px;
+  height: 16px;
+  background-color: #ff6666;
+  border-radius:16rpx;
+  text-align: center;
+  margin-left:10px;
+  line-height: 16px;
+  margin-top: 3px;
+  float:left;
+}
+.dakaJiLuBox .dayjilu1 .daishenpi{
+  width: 52px;
+  height: 16px;
+  border-radius:16rpx;
+  background-color: #ccc;
+}
+.clear{
+  clear: both;
+}
+.dakaJiLuBox .dayjilu1 .line{
+  height:47px;
+  width:4rpx;
+  background-color:#fbce46;
+  top:-28px;
+  left:19px;
+  position:absolute;
+}
+.btn{
+  position: fixed;
+  bottom: 0; 
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+button{
+  background-color: #3399ff;
+  color: #fff;
+  width: 50%;
+  border-radius:0;
+  box-shadow: 8px 10px 10px  #ccc;
+  border: 0px groove orange;
+  line-height: 96rpx;
+  text-align: center;
+  font-size: 18px;
+}
+.btn-hover{
+  box-shadow: 5px 6px 10px  #ccc;
+  opacity: .7;
+}
+.txperson{
+  display: block;
+  font-size:30rpx; 
+  /* overflow: hidden;
+  white-space: nowrap;
+  text-overflow:ellipsis; */
+}

@@ -1,0 +1,7 @@
+<!--9.2公告详情  -->
+<view class='announcementXQ'>
+  <view class='title'>{{items.title}}</view>
+  <view class='dept'>{{items.dept}}</view>
+  <view class='time'>{{items.gmt_create}}</view>
+</view>
+<view class='content'>{{items.content}}</view>

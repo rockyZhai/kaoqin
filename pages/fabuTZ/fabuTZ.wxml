@@ -1,0 +1,20 @@
+<!--发布通知  -->
+<view class='box'>
+  <view class='result' style='border-top:1px solid #e0e0e0;'>
+    <text>标题：</text>
+    <input type='text' placeholder='请输入通知标题' bindinput='titleValue'></input>
+  </view>
+   <view class='result' >
+    <text>发布人：</text>
+    <input type='text' placeholder='请输入发布人' bindinput='bumenValue'></input>
+  </view>
+  <view class='result'>
+    <text>内容：</text>
+    <textarea auto-height='{{true}}' bindinput='textareaValue' class='resultinput' type='text' placeholder='请输入通知内容'></textarea>
+  </view>
+  <!-- <view class='title' style='padding:0'>
+    <text class='content'>内容：</text>
+    <textarea style='padding:20rpx 0 20rpx 0' type='text' auto-height='{{true}}'  bindinput='textareaValue'></textarea>
+  </view> -->
+</view>
+<button hover-class='btn-hover' bindtap='fabu'>发布</button>

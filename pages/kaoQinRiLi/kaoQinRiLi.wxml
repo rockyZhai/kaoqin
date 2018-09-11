@@ -1,0 +1,48 @@
+<!--3.2考勤记录_考勤日历  -->
+<view class='title'>
+  <view class='photo'>
+    <image src='{{photo}}'></image>{{personName}}
+  </view>
+</view>
+<!--日历插件  -->
+<view class='wrap'>  
+  <view>  
+    <view class='date-show'>  
+        <view class='lt-arrow' bindtap='lastMonth'>  
+            <image src='../images/nextMonth.png' mode='aspectFit'></image>  
+        </view>  
+        {{year}}年{{month}}月 
+        <view class='rt-arrow' bindtap='nextMonth'>  
+            <image src='../images/nextMonth.png' mode='aspectFit'></image>  
+        </view>  
+    </view>  
+  </view>  
+  <view class='header'>  
+    <view wx:for='{{date}}' wx:key = "index" class='{{(index==todayIndex) && isTodayWeek ? "weekMark" : ""}}'>{{item}}</view>  
+  </view>  
+  <view class='date-box'>  
+    <view wx:for='{{dateArr}}' wx:key = "index" class='{{isToday == item.isToday || clickDate == item.isToday ? "nowDay" : ""}}' data-date='{{item.isToday}}'>            
+      <view class='date-head {{ clickDate == item.isToday ? "active" : "" }}' bindtap = "selectDate" data-index = "{{ index }}"> 
+        <view>{{item.dateNum}}</view>  
+      </view>  
+    </view>  
+  </view>  
+</view>  
+<!--打卡记录  -->
+<view class='dakaJiLuBox' style='display:{{display}}'>
+  <view class='dayjilu1' wx:for="{{list}}" wx:key="index" wx:for-item="itemName">
+    <view class='line' wx:if = "{{index!= 0}}"></view>
+      <view class='round'></view>
+      <view class='middle' style='display:flex;'>
+        <view class='timeData'>
+          <view class='timeData_weizhi'>{{itemName.name_dk}} {{itemName.gmt_kssj}}</view>
+          <view>打卡时间 {{itemName.gmt_last_update}}</view>
+        </view>
+        <view data-id='{{itemName.code_kqxx}}' data-code='{{itemName.gmt_kssj}}' data-time='{{arr[index]}}'bindtap="{{itemName.status==3 ? 'buka' : '' }}" class="{{itemName.status ==0 ? 'gray' : itemName.status ==1 ? 'green': itemName.status ==2 ? 'pink' : itemName.status==3 ? 'pink' : itemName.status==4 ? 'pink' : '' }}">
+          {{itemName.status == 0 ? "" : itemName.status == 1 ? "正常" : itemName.status == 2 ? "迟到" : itemName.status == 3 ? "缺卡" : itemName.status == 4 ? "早退" : ""}}    
+        </view>  
+      </view>
+      <view class='clear'></view>
+      <view class='weizhi'><image src='../images/adress.png'></image>{{itemName.address_cs}}</view>
+    </view>
+  </view>

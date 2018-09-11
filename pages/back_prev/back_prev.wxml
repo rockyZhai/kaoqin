@@ -1,0 +1,57 @@
+<!--pages/back_prev/index.wxml-->
+<view class="content">
+  <!-- <view>
+    <input class='search' type='text'></input>
+    <icon type='search' size='20'></icon>
+  </view> -->
+ 
+  <view style='display:flex; justify-content: space-between'>
+    <radio-group class='radio-group' bindchange="checkboxChange"> 
+      <label class="checkbox" wx:for="{{items}}" wx:key = "index" >
+        <view style = "padding:10px 0 10px 10px; font-size:14px; border-bottom:1px solid #e0e0e0;" >
+        <view class='name'>
+          <radio value="{{item.personId}}" checked="{{item.checked}}" data-id='{{item.personId}}'/>
+          <image src='{{item.photo}}'></image>
+          <view class='nameZW'>
+            <view class='xingming'>{{item.personName}}</view>
+            <!-- <view class='text'>{{item.deptUuid}}</view> -->
+          </view>
+        </view>
+        </view>
+      </label>
+    </radio-group>
+    <!-- <view class='zimu'>
+      <view>A</view>
+      <view>B</view>
+      <view>C</view>
+      <view>D</view>
+      <view>E</view>
+      <view>F</view>
+      <view>G</view>
+      <view>H</view>
+      <view>I</view>
+      <view>J</view>
+      <view>K</view>
+      <view>L</view>
+      <view>M</view>
+      <view>N</view>
+      <view>O</view>
+      <view>P</view>
+      <view>Q</view>
+      <view>R</view>
+      <view>S</view>
+      <view>T</view>
+      <view>U</view>
+      <view>V</view>
+      <view>W</view>
+      <view>X</view>
+      <view>Y</view>
+      <view>Z</view>
+    </view> -->
+  </view>
+</view>
+
+<button hover-class='btn-hover' bindtap = "sureSelect">完成</button> 
+
+
+

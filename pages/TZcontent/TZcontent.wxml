@@ -1,0 +1,20 @@
+<!--发布通知  -->
+<view class='box'>
+  <view class='result' style='border-top:1px solid #e0e0e0;'>
+    <text>标题：</text>
+    <input type='text' value='{{titleValue}}' bindinput='input'></input>
+  </view>
+  <view class='result'>
+    <text>发布人：</text>
+    <input type='text' value='{{deptValue}}' bindinput='bumen'></input>
+  </view>
+  <!-- <view class='title' style='padding:0'>
+    <text class='content'>内容：</text>
+    <textarea style='padding:20rpx 0 20rpx 0' type='text' auto-height='{{true}}' value='{{contentValue}}' bindinput='textarea'></textarea>
+  </view> -->
+   <view class='result'>
+    <text>内容：</text>
+    <textarea auto-height='{{true}}' bindinput='textareaValue' class='resultinput' type='text' value='{{contentValue}}'></textarea>
+  </view> 
+</view>
+<button hover-class="btn-hover" bindtap='updateContent' data-code="{{items.code_notice}}">确定</button>

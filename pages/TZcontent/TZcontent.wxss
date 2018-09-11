@@ -1,0 +1,55 @@
+/*修改通知  */
+
+page{
+  background-color: #f7f6fc
+}
+.box{
+  margin-top: 20px;
+}
+.content{
+  min-width: 50px;
+  max-width: 60px;
+  padding:20rpx 0 20rpx 30rpx
+}
+input{
+  font-size: 16px;
+  padding:20rpx 0 0 10rpx;
+  display:inline-block;
+  width: 77%; 
+}
+.result{
+  display: flex; 
+  border-bottom: 1px solid #e0e0e0;
+  background-color: #fff;
+  justify-content: flex-start; 
+ 
+}
+.result text{ 
+  font-size:16px;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  padding-left: 30rpx;
+}
+textarea{
+  font-size: 16px;
+  padding-top: 10rpx;
+  display: inline-block;
+  padding-bottom: 20rpx;
+  margin-right:10rpx;
+}
+button{
+  margin-top: 60rpx;
+  width: 100%;
+  background-color: #3399ff;
+  color: #fff;
+  border-radius: 0;
+  height: 55px;
+  line-height: 55px;
+  font-size: 18px;
+  box-shadow: 8px 10px 10px  #ccc;
+  border: 0px groove orange;
+}
+.btn-hover{
+  box-shadow: 5px 6px 10px  #ccc;
+  opacity: .7;
+} 

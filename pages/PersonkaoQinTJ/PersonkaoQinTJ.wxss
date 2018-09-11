@@ -1,0 +1,43 @@
+/* <!-- 3.1 考勤记录_本月记录--> */
+.title{
+  height: 96rpx;
+  background-color: #e4f8f4;
+  line-height: 96rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.title .photo{
+  font-size: 16px;
+  color: #333;
+}
+.title .photo image{
+  width: 50rpx;
+  height: 50rpx;
+  margin-right: 16rpx;
+  vertical-align: middle;
+  border-radius: 50%;
+}
+.monthJL .line{
+  border-bottom: 1px solid #e0e0e0;
+  height: 0;
+}
+.monthJL view{
+  height: 96rpx;
+  line-height: 96rpx;
+  border-bottom: 1px solid #e0e0e0;
+  padding-left: 40rpx;
+  font-size: 16px;
+}
+.section{
+  height: 96rpx;
+  line-height: 96rpx;
+  font-size: 16px;
+  margin-left: 34rpx;
+}
+.section image{
+  width: 30rpx;
+  height: 30rpx;
+  vertical-align:middle;
+  padding-left:16rpx;
+
+}

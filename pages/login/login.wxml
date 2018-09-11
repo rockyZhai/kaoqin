@@ -1,0 +1,23 @@
+<!--pages/login/login.wxml-->
+<view class='bgs'>
+<image src='../images/bg.jpg'></image>
+</view>
+  <form bindsubmit="formSubmit">
+    <view class='bg'>
+      <view class='logo'> 
+        <image src='../images/logo.png'></image>
+      </view>
+      <view class='txt'>安徽考勤小程序</view>
+      <view class='phone'>
+        <image src='../images/phone.png'></image>
+        <input name="username" type='number' maxlength='11' placeholder='用户名' bindinput='phone'></input> 
+      </view>
+        
+      <view class='phone'>
+        <image src='../images/psw.png'></image>
+        <input name='psw' type='text' password='{{true}}' placeholder='密码' bindinput='password'></input>
+      </view> 
+      <button bindtap="submit" class="btn" hover-class="btn-hover">登录</button>
+    </view>
+  </form>
+

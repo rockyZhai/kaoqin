@@ -1,0 +1,76 @@
+/*<!--4.1统计报表  -->  */
+.shenPiContent{
+  font-size: 14px;
+  text-align: center;
+  color: #999;
+  padding-top: 100rpx;
+  background-color:#f7f6fc;
+
+}
+page{
+  background-color: #f7f6fc;
+}
+.section{
+  height: 96rpx;
+  line-height: 96rpx;
+  font-size: 16px;
+  text-align:left;
+  padding-left:15px;
+  background-color: #fff;
+}
+.section picker{
+  display: inline-block;
+}
+.section image{
+  width: 30rpx;
+  height: 30rpx;
+  vertical-align:middle;
+  margin-left:20rpx;
+}
+/*表格  */
+
+#panel text{
+  line-height: 96rpx;
+  font-size: 16px;
+}
+#panel image{
+  width: 60rpx;
+  height: 60rpx;
+}
+#title{
+  background-color: #f7f6fc;
+  font-weight: bold;
+  border-bottom: 1rpx solid #e0e0e0;
+  border-top: 1rpx solid #e0e0e0;
+}
+.flex-row{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#content:nth-child(odd) {
+    background: #eff7ff;
+}
+.red{
+  color: #ff6666
+}
+.flex-column:nth-child(2){
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  background-color: #fff;
+}
+
+.flex-cell{
+  flex: 1;
+}
+#content{
+  position: relative;
+  border-bottom: 1rpx solid #e0e0e0;
+}
+#content image{
+  position: absolute;
+  right: 7px;
+  top:25%;
+}

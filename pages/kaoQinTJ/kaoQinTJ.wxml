@@ -1,0 +1,32 @@
+<!-- 3.1 考勤记录_本月记录-->
+<view class='title'>
+  <view class='photo' style='padding-left:40rpx'>
+    <image src='{{photo}}'></image>{{name}}
+  </view>
+  <!--考勤日历  -->
+  <view class='photo' bindtap='RiLi' data-personphoneno='{{items.personId}}' style='padding-right:40rpx'>
+    <image src='../images/riLi.png' class='rili'></image>考勤日历
+  </view>
+</view>
+
+<!--年月控件  -->
+<view class="section">
+  <picker mode="date" fields="month" bindchange="bindDateChange" value="{{date}}">
+    <view class="picker">
+      {{date}}<image src='../images/down.png'></image> 
+    </view>
+  </picker>
+</view> 
+<!--月打卡记录  -->
+<view class='monthJL'>
+  <view class='line'></view>
+  <view>出勤：<text>{{items.cq}}次</text></view>
+  <view>请假：<text>{{items.qj}}次</text></view>
+  <view>迟到：<text>{{items.cd}}次</text></view>
+  <view>早退：<text>{{items.zt}}次</text></view>
+  <view>缺卡：<text>{{items.qk}}次</text></view>
+  <view>补卡：<text>{{items.bk}}次</text></view>
+  <view>旷工：<text>{{items.kg}}次</text></view>
+  <view>加班：<text>{{items.jb}}次</text></view>
+  <view>出差：<text>{{items.cc}}次</text></view>
+</view>

@@ -1,0 +1,147 @@
+/**index.wxss**/
+page{
+  background-color: #f7f6fc;
+}
+
+.background {
+  position: relative
+}
+.background .img{
+  width:100%;
+  height:340rpx;
+  display:inline-block;
+  overflow:hidden;
+  vertical-align:top;
+}
+.background .photo{
+  position: absolute;
+  width: 144rpx;
+  height: 144rpx;
+  top: 70rpx;
+  left: 40%;
+  text-align: center;
+  border-radius: 50%;
+}
+.background .photo image{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  vertical-align: top;
+  border-radius:50%;
+}
+.background .photo text{
+  font-size: 14px;
+  color: #ffffff;
+}
+.announcement{
+  height: 80rpx;
+  background-color: #f8e4e4;
+  line-height: 80rpx;
+  display: flex;
+  justify-content: space-between; 
+}
+.announcement image{
+  width: 28rpx;
+  height: 32rpx;
+  margin-right: 16rpx;
+  vertical-align: middle;
+  margin-left:22px;
+}
+.announcement .content{
+   color: #333;
+   font-size: 14px;
+}
+.announcement .time{
+  color: #999;
+  font-size: 12px;
+  margin-right:20px;
+}
+.attendance{
+  margin-bottom:16rpx;
+  width: 100%; 
+  background-color: #fff;
+}
+.attendance .title{
+  font-size: 18px;
+  padding-top:21px;
+}
+.attendance .icon1{
+  height: 24rpx;
+  width: 4rpx;
+  background-color: #ff8366;
+  display: inline-block;
+  margin-left: 54rpx;
+  margin-right: 8rpx;
+}
+.attendance .attendanceLisst{
+  margin-top: 24rpx;
+  display: flex;
+  flex-wrap:wrap;
+}
+.attendance .attendanceLisst .timeSheet{
+  width: 25%;
+  height: 132rpx;
+  margin-bottom: 48rpx;
+}
+.attendance .attendanceLisst image{
+  width: 100%;
+  vertical-align:top;
+  height: 100%;
+}
+.attendance .icon2{
+  height: 24rpx;
+  width: 4rpx;
+  background-color: #66d9ff;
+  display: inline-block;
+  margin-left: 54rpx;
+  margin-right: 8rpx;
+}
+.attendance .icon3 {
+  width:4rpx;
+  height: 24rpx;
+  background-color:#66ffa0;
+  display:inline-block;
+  margin-left:54rpx;
+  margin-right:8rpx;
+}
+
+
+
+
+
+
+
+/*使屏幕变暗  */
+.commodity_screen {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.5;
+  overflow: hidden;
+  z-index: 1000;
+  color: #fff;
+}
+/*对话框 */
+.commodity_attr_box {
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 2000;
+  background: #fff;
+  font-size: 18px;
+  text-align: center;
+}
+.commodity_attr_box .XGpwd{
+  border-bottom: 1px solid #e0e0e0;
+  height: 50px;
+  line-height: 50px;
+}
+.commodity_attr_box .TClogin{
+  height: 50px;
+  line-height: 50px;
+}

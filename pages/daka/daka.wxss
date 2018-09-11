@@ -1,0 +1,143 @@
+/* 2.1  考勤打卡 */
+.title{
+  height: 96rpx;
+  background-color: #e4f8f4;
+  line-height: 96rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.title .photo{
+  font-size: 16px;
+  color: #333;
+  margin-left: 24px;
+}
+.title .photo image{
+  width: 50rpx;
+  height: 50rpx;
+  margin-right: 16rpx;
+  vertical-align: middle;
+  border-radius:50%;
+}
+.title text{
+  font-size: 12px;
+  color: #999;
+  margin-right: 24px;
+}
+/*时间  */
+.time{
+  width: 286rpx;
+  height: 286rpx;
+  border-radius: 50%;
+  margin: 40rpx auto 10px;
+  border: 2px solid #fff;
+  text-align: center;
+}
+.time.hover{
+  background-color: red;
+}
+.time .daKaTime{
+  font-size: 20px;
+  color: #fff;
+  font-weight: 600;
+  margin:25px auto 0;
+  width:95px;
+}
+.time .formatDate{
+  font-size: 14px;
+  /* color: #a2cdfe; */
+  color: #fff;
+  font-weight: bold;
+  width:90px;
+  height:25px;
+  margin:0 auto;
+}
+.position{
+  font-size:14px;
+  margin-top:10rpx;
+  text-align: center;
+  color:#333;
+}
+button[disabled][type="default"], wx-button[disabled]:not([type]) {
+  color:white;
+  background-color:#A0A0A0;
+}
+/* 打卡记录 */
+.dakaJiLuBox{
+  margin: 84rpx auto;
+}
+.dakaJiLuBox .dayjilu1{
+  padding-left: 20px;
+  position: relative;
+  background-color:#fefcf4;
+  padding-bottom:12px;
+  padding-top:12px;
+}
+.dakaJiLuBox .dayjilu1 .round{
+  width: 16rpx;
+  height: 16rpx;
+  border-radius: 50%;
+  background: #fbce46;
+  float:left;
+  margin-top: 5px;
+}
+.dakaJiLuBox .dayjilu1 .middle{
+  /* float: left; */
+  margin-left: 7%;
+  /* margin-top: 24px; */
+}
+.dakaJiLuBox .dayjilu1 .middle .timeData{
+  font-size: 16px;
+  color: black;
+  width: 155px;
+}
+.dakaJiLuBox .dayjilu1 .weizhi{
+  font-size: 12px;
+  color: #999;
+  margin-top: 6px;
+  margin-left: 6%;
+}
+.dakaJiLuBox .dayjilu1 .weizhi image{
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
+.dakaJiLuBox .dayjilu1 .timeData_weizhi{
+  font-size: 12px;
+  color: #999;
+  margin-bottom: 6px;
+}
+
+
+.dakaJiLuBox .dayjilu1 .green{
+  font-size: 12px;
+  color: #fff;
+  width: 40px;
+  height: 16px;
+  background-color: #8bc34a;
+  border-radius:20rpx;
+  text-align: center;
+}
+.dakaJiLuBox .dayjilu1 .pink{
+  font-size: 12px;
+  color: #fff;
+  width: 40px;
+  height: 16px;
+  background-color: #ff3333;
+  border-radius:20rpx;
+  text-align: center;
+}
+.clear{
+  clear: both;
+}
+.dakaJiLuBox .dayjilu1 .line{
+  height:89px;
+  width:4rpx;
+  background-color:#fbce46;
+  top:-72px;
+  left:23px;
+  position:absolute;
+}
+.btn-hover{
+  opacity: .7;
+}
+

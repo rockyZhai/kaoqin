@@ -1,0 +1,16 @@
+<!--announcementList  9.1  通知-->
+<block wx:if="{{list==''}}">
+  <view class='shenPiContent'>
+    <image src='../images/No_tongzhi.png'></image>
+    <view>暂时没有通知</view>
+  </view>
+</block>
+<block wx:else>
+  <view class='announcementList' bindtap='announcementXQ' wx:for="{{list}}" wx:key="index" wx:for-item="itemName" data-code="{{itemName.code_notice}}">
+    <view class='left'>
+      <view class='content'>{{itemName.title}}</view>
+      <view class='time'>{{itemName.gmt_create}}</view>
+    </view>
+    <image src='../images/nextMonth.png'></image>
+  </view>
+</block>

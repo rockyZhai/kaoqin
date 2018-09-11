@@ -1,0 +1,35 @@
+<!--4.1统计报表  -->
+<!--年月控件  -->
+<view class="section">
+  <picker mode="date" fields="month" bindchange="bindDateChange" value="{{date}}">
+    <view class="picker">
+      {{date}}<image src='../images/down.png'></image> 
+    </view>
+  </picker>
+</view> 
+<!--表格  -->
+<view id="panel" class="flex-column">
+  <view class="flex-cell flex-row" id='title'>
+    <text class="flex-cell flex-row" style="margin-left: 30rpx;padding-right:30rpx">姓名</text>
+    <text class="flex-cell flex-row">迟到</text>
+    <text class="flex-cell flex-row">早退</text>
+    <text class="flex-cell flex-row">缺卡</text>
+    <text class="flex-cell flex-row">出差</text>
+  </view>
+  <block wx:if="{{items==''}}">
+    <view class='shenPiContent'>
+      <view>当月无记录</view>
+    </view>
+  </block>
+  <block wx:else>
+    <view class="flex-row flex-cell" id='content' wx:for="{{items}}" wx:key="index" wx:for-item="itemName" data-phone="{{itemName.phoneNo}}" data-personid="{{itemName.personId}}" data-name='{{itemName.personName}}' bindtap='kaoQinTJ'>
+      <text class="flex-cell flex-row" style="margin-left: 30rpx;padding-right:30rpx">{{itemName.personName}}</text>
+      <text class="flex-cell flex-row  {{itemName.cd > 0 ? 'red' : ''}}">{{itemName.cd}}次</text>
+      <text class="flex-cell flex-row {{itemName.zt > 0 ? 'red' : ''}}">{{itemName.zt}}次</text>
+      <text class="flex-cell flex-row {{itemName.qk > 0 ? 'red' : ''}}">{{itemName.qk}}次</text>
+      <text class="flex-cell flex-row">{{itemName.cc}}次</text>
+      <image src='../images/nextMonth.png'></image>
+    </view>
+  </block>
+ 
+</view>

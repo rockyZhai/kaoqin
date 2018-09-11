@@ -1,0 +1,80 @@
+/*2.2考勤_本日考勤记录  */
+.title{
+  height: 96rpx;
+  background-color: #e4f8f4;
+  line-height: 96rpx;
+  display: flex;
+  justify-content: space-around;
+}
+.title .photo{
+  font-size: 14px;
+  color: #333;
+}
+.title .photo image{
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 16rpx;
+  vertical-align: middle;
+}
+.title text{
+  font-size: 12px;
+  color: #999;
+}
+
+/* 打卡记录 */
+.dakaJiLuBox{
+  padding-bottom:24px;
+  width: 91.11%;
+  margin: 84rpx auto;
+  background-color: #fefcf4;
+  border: 1px solid #ffefad;
+}
+.dakaJiLuBox .dayjilu1{
+  margin-left: 10%;
+  position: relative;
+}
+.dakaJiLuBox .dayjilu1 .round{
+  width: 16rpx;
+  height: 16rpx;
+  border-radius: 50%;
+  background: #fbce46;
+  float:left;
+  margin-top: 26px;
+}
+.dakaJiLuBox .dayjilu1 .middle{
+  float: left;
+  margin-left: 7%;
+  margin-top: 24px;
+}
+.dakaJiLuBox .dayjilu1 .middle view{
+  font-size: 16px;
+  color: black
+}
+.dakaJiLuBox .dayjilu1 .middle .weizhi{
+  font-size: 12px;
+  color: #999;
+  margin-top: 6px;
+}
+.dakaJiLuBox .dayjilu1 .event{
+  float: left;
+  margin-top: 24px;
+  font-size: 12px;
+  color: #fff;
+  width: 40px;
+  height: 16px;
+  background-color: #8bc34a;
+  border-radius:20rpx;
+  text-align: center;
+  margin-left: 5%;
+}
+.clear{
+  clear: both;
+}
+.dakaJiLuBox .dayjilu1 .line{
+  height: 61px;
+  width: 4rpx;
+  background-color: #fbce46;
+  top:-35px;
+  left:3px;
+  position: absolute;
+}

@@ -1,0 +1,77 @@
+<!--index.wxml-->
+<view>
+  <view class='background'>
+    <image class='img' src='../images/background.jpg'></image>
+    <view class='photo' bindtap='showModalStatus'>
+      <image src='{{photo}}'></image>
+      <text>{{personName}}</text>
+    </view> 
+  </view>
+  
+  <view class='announcement' bindtap='announcementList'>
+    <view>
+      <image src='../images/index.png'></image>
+      <text class='content'>{{title}}</text>
+    </view>
+    <text class='time'>{{gmt_create}}</text>
+  </view>
+  <!--考勤  -->
+  <view class='attendance'>
+    <view class='title'><view class='icon1'></view>考勤</view>
+    <view class='attendanceLisst'>
+      <view class='timeSheet' bindtap='daka'>
+        <image src='../images/kaoQin.png'></image>
+      </view>
+      <view class='timeSheet' bindtap='kaoQinTJ'>
+        <image src='../images/kaoQinTJ.png'></image>
+      </view>
+      <view class='timeSheet' bindtap='TJbaoBiao'>
+        <image src='../images/TongJiBiao.png'></image>
+      </view>
+    </view>
+  </view>
+
+   <!--加班  -->
+  <view class='attendance'>
+    <view class='title'><view class='icon2'></view>申请/审批</view>
+    <view class='attendanceLisst'>
+      <view class='timeSheet' bindtap='qingJia'>
+        <image src='../images/qingJia.png'></image>
+      </view>
+      <view class='timeSheet' bindtap='jiaban'>
+        <image src='../images/jiaBan.png'></image>
+      </view>
+      <view class='timeSheet' bindtap='chuChai'>
+        <image src='../images/chuChai.png'></image>
+      </view>
+       <view class='timeSheet' bindtap='shenpi'>
+        <image src='../images/shenPi.png'></image>
+      </view>
+      <view class='timeSheet' bindtap='myShengqing'>
+        <image src='../images/shenqing.png'></image>
+      </view>
+    </view>
+  </view>
+   <!--设置  -->
+  <view class='attendance' style='margin-bottom:0;'>
+    <view class='title'><view class='icon3'></view>设置</view>
+    <view class='attendanceLisst'>
+      <view class='timeSheet'  bindtap="set">
+        <image src='../images/set.png'></image>
+      </view>
+      <view class='timeSheet'  bindtap="TZlist">
+        <image src='../images/fabuTZ.png'></image>
+      </view>
+    </view>
+  </view>
+</view>
+
+
+
+ <!--屏幕背景变暗的背景  -->
+<view class="commodity_screen" bindtap="hideModal" wx:if="{{showModalStatus}}"></view>
+<!--弹出框  -->
+<view animation="{{animationData}}" class="commodity_attr_box" wx:if="{{showModalStatus}}">
+  <view class='XGpwd' bindtap='ModifyThePassword' data-personno='{{addTel}}' data-photo='{{photo}}' data-personname='{{personName}}'>修改密码</view>
+  <view class='TClogin' bindtap='TClogin'>退出登录</view>
+</view>

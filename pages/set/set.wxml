@@ -1,0 +1,43 @@
+<!--5.设置  -->
+<view class='box'>
+  <!--早上一  -->
+  <view class="section" style='border-top:1px solid #e0e0e0;'>
+    <!--早上上班： -->
+    <picker class='time' mode="time" value="{{timeStar1}}" bindchange="bindTimeChangeStar1">
+      <view class="picker">早上上班：{{timeStar1}}
+        <image class='icon' src='../images/right.png'></image>
+      </view>
+    </picker>
+    <!--早上下班：-->
+    <picker class='time' mode="time" value="{{timeStar2}}" bindchange="bindTimeChangeStar2">
+      <view class="picker">早上下班：{{timeStar2}}
+        <image class='icon' src='../images/right.png'></image>
+      </view>
+    </picker>
+  </view>
+  <!--下午  -->
+  <view class="section">
+      <!--下午上班： -->
+    <picker class='time' mode="time" value="{{timeStar3}}" bindchange="bindTimeChangeStar3">
+      <view class="picker">下午上班：{{timeStar3}}
+        <image class='icon' src='../images/right.png'></image>
+      </view>
+    </picker>
+    <!--下午下班： -->
+    <picker class='time' mode="time" value="{{timeStar4}}" bindchange="bindTimeChangeStar4">
+      <view class="picker">下午下班：{{timeStar4}}
+        <image class='icon' src='../images/right.png'></image>
+      </view>
+    </picker>
+  </view>
+   <!--允许范围  -->
+  <view class="section" style='border:1px solid #e0e0e0;'>
+    <text class="section__title">弹性时间：</text>
+    <input type="number" class='scopeTime' value="{{scopeTime}}" bindblur='scopeTimeInput'></input>
+    <text class='minute'>分钟</text>
+    <view class='clear' style='clear:both'></view>
+  </view>
+</view>
+<!--确定  -->
+<button hover-class='btn-hover' bindtap='sure'>确定</button>
+

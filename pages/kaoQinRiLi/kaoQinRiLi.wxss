@@ -1,0 +1,206 @@
+/*3.2考勤记录_考勤日历  */
+.title{
+  height: 96rpx;
+  background-color: #e4f8f4;
+  line-height: 96rpx;
+  display: flex;
+}
+.title .photo{
+  font-size: 16px;
+  color: #333;
+  margin-left: 30rpx
+}
+.title .photo image{
+  width: 50rpx;
+  height: 50rpx;
+  margin-right: 16rpx;
+  vertical-align: middle;
+  border-radius: 50%;
+}
+.date-show{  
+  position:relative;
+  width:250rpx;
+  font-family:PingFang-SC-Regular;
+  font-size:28rpx;
+  color:#282828;
+  text-align:center;
+  margin:28rpx auto 10rpx;
+  
+}  
+.lt-arrow,.rt-arrow{  
+    position: absolute;  
+    top: 1rpx;  
+    width: 60rpx;  
+    height: 60rpx;  
+}  
+.lt-arrow image,.rt-arrow image{  
+  width:60rpx;
+  height:60rpx;
+}  
+.lt-arrow{  
+  left:-30rpx;
+  transform:rotate(180deg);
+  top:-10rpx;
+}  
+.rt-arrow{  
+  right:-30rpx;
+  top:-10rpx;
+}  
+.header{  
+    font-size: 0;  
+    padding: 0 24rpx;  
+}  
+.header>view{  
+    display: inline-block;  
+    width: 14.285%;  
+    color: #999;  
+    font-size: 14px;  
+    text-align: center;   
+    padding:15rpx 0;  
+}  
+.weekMark{  
+    position: relative;     
+}  
+.weekMark view{  
+    position: absolute;  
+    bottom: 0;  
+    left: 0;  
+    width: 100%;  
+    border-bottom: 1px solid #22A7F6;   
+}  
+.date-box{  
+    font-size: 0;  
+    padding: 0 10px;
+}  
+.date-box>view{  
+    position: relative;  
+    display: inline-block;  
+    width: 14.285%;  
+    color: #020202;  
+    font-size: 40rpx;  
+    text-align: center;  
+    vertical-align: middle;  
+    margin: 10rpx 0; 
+}  
+.date-head{  
+    height: 60rpx;  
+    line-height: 60rpx;  
+    font-size: 26rpx;  
+}  
+.nowDay .date-head{  
+    width: 60rpx;  
+    border-radius: 50%;  
+    text-align: center;  
+    color: #fff;  
+    background-color: #ccc;   
+    margin: 0 auto; 
+}  
+.date-weight{  
+    font-size: 22rpx;  
+    padding: 15rpx 0;    
+}  
+.nowDay .date-weight{  
+    color: #22A7F6; 
+}  
+.one{  
+    position: absolute;  
+    bottom: 0;  
+    right: 5rpx;  
+    width: 20rpx;  
+    height: 20rpx;  
+    border-radius: 50%;  
+    background-color: red;  
+}  
+.two{  
+    position: absolute;  
+    bottom: 30rpx;  
+    right: 5rpx;  
+    width: 20rpx;  
+    height: 20rpx;  
+    border-radius: 50%;  
+    background-color: blue;  
+} 
+
+.date-box .active{
+     background-color: #ff6666;   
+}
+.position{
+  font-size:16px;
+  margin-top:10rpx;
+  text-align: center;
+  color:rgb(255,158,158);
+}
+/* 打卡记录 */
+.dakaJiLuBox{
+  margin: 84rpx auto;
+}
+.dakaJiLuBox .dayjilu1{
+  padding-left: 20px;
+  position: relative;
+  background-color:#fefcf4;
+  padding-bottom:12px;
+  padding-top:12px;
+}
+.dakaJiLuBox .dayjilu1 .round{
+  width: 16rpx;
+  height: 16rpx;
+  border-radius: 50%;
+  background: #fbce46;
+  float:left;
+  margin-top: 5px;
+}
+.dakaJiLuBox .dayjilu1 .middle{
+  margin-left: 7%;
+}
+.dakaJiLuBox .dayjilu1 .middle .timeData{
+  font-size: 16px;
+  color: black;
+  width: 155px;
+}
+.dakaJiLuBox .dayjilu1 .weizhi{
+  font-size: 12px;
+  color: #999;
+  margin-top: 6px;
+  margin-left: 6%;
+}
+.dakaJiLuBox .dayjilu1 .weizhi image{
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
+.dakaJiLuBox .dayjilu1 .timeData_weizhi{
+  font-size: 12px;
+  color: #999;
+  margin-bottom: 6px;
+}
+
+
+.dakaJiLuBox .dayjilu1 .green{
+  font-size: 12px;
+  color: #fff;
+  width: 40px;
+  height: 16px;
+  background-color: #8bc34a;
+  border-radius:20rpx;
+  text-align: center;
+}
+.dakaJiLuBox .dayjilu1 .pink{
+  font-size: 12px;
+  color: #fff;
+  width: 40px;
+  height: 16px;
+  background-color: #ff3333;
+  border-radius:20rpx;
+  text-align: center;
+}
+.clear{
+  clear: both;
+}
+.dakaJiLuBox .dayjilu1 .line{
+  height:89px;
+  width:4rpx;
+  background-color:#fbce46;
+  top:-72px;
+  left:23px;
+  position:absolute;
+}

@@ -1,0 +1,28 @@
+/*9.1  公告列表css  */
+.shenPiContent{
+  font-size: 14px;
+  text-align: center;
+  color: #999;
+  margin-top: 100rpx;
+}
+.shenPiContent image{
+  width: 96rpx;
+  height: 100rpx;
+  margin-bottom: 40rpx;
+}
+.announcementList{
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  color: #333;
+}
+.announcementList .left{
+  margin-left: 20px;
+  padding: 10px 0; 
+}
+.announcementList image{
+  width:60rpx;
+  height:60rpx;
+  margin:15px 20px 0 0;
+}

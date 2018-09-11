@@ -1,0 +1,36 @@
+{
+  "pages":[
+    "pages/login/login",
+    "pages/jiaban/jiaban",
+    "pages/qingJia/qingJia",
+    "pages/index/index",
+    "pages/daka/daka",
+    "pages/back_prev/back_prev",
+    "pages/buka/buka",
+    "pages/prev/prev",
+    "pages/announcementList/announcementList",
+    "pages/announcementXQ/announcementXQ",
+    "pages/dayDakaJiLu/dayDakaJiLu",
+    "pages/kaoQinTJ/kaoQinTJ",
+    "pages/kaoQinRiLi/kaoQinRiLi",
+    "pages/TJbaoBiao/TJbaoBiao",    
+    "pages/shenpi/shenpi",
+    "pages/qingjiashenpi/qingjiashenpi",
+    "pages/myShenQing/myShenQing",
+    "pages/shenqingshenpi/shenqingshenpi",
+    "pages/set/set",
+    "pages/ModifyThePassword/ModifyThePassword",
+    "pages/TZlist/TZlist",
+    "pages/fabuTZ/fabuTZ",
+    "pages/TZcontent/TZcontent",
+    "pages/PersonkaoQinTJ/PersonkaoQinTJ",
+    "pages/chuChai/chuChai",
+    "pages/TongXunLu/TongXunLu"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#2c2933",
+    "navigationBarTitleText": "安徽考勤",
+    "navigationBarTextStyle": "white"
+  }
+}

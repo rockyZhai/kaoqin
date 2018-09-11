@@ -1,0 +1,63 @@
+<!--5.请假  -->
+<view class='content' style='width:100%;height:auto;'> 
+ <view style="display:flex; justify-content: space-between">
+  <view style='width:100%;height:auto;margin-bottom:200rpx;'>
+  <view class='box'>
+  <!--请假类型  -->
+    <view class="section" style='border-top:1px solid #e0e0e0;'>
+      <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}" range-key='name_qjlx'> 
+        <text>请假类型：{{array[index].name_qjlx}}</text>
+        <image class='icon' src='../images/down.png'></image>
+      </picker>
+    </view> 
+     <!--开始时间：  -->
+    <view class="tui-picker-content">
+      <picker mode="multiSelector" value="{{dateTime2}}"  bindchange="changeDateTime1" bindcolumnchange="changeDateTimeColumn1" range="{{dateTimeArray2}}">
+        <view class="tui-picker-detail">
+          开始时间：{{dateTimeArray1[0][dateTime1[0]]}}-{{dateTimeArray1[1][dateTime1[1]]}}-{{dateTimeArray1[2][dateTime1[2]]}} {{dateTimeArray1[3][dateTime1[3]]}}:{{dateTimeArray1[4][dateTime1[4]]}}
+          <image class='icon' src='../images/down.png'></image>
+        </view>
+      </picker>
+    </view>  
+    <!-- 结束时间： -->
+    <view class="tui-picker-content">
+      <picker mode="multiSelector" value="{{dateTime2}}" bindchange="changeDateTime2" bindcolumnchange="changeDateTimeColumn2" range="{{dateTimeArray2}}">
+        <view class="tui-picker-detail">
+           结束时间：{{dateTimeArray2[0][dateTime2[0]]}}-{{dateTimeArray2[1][dateTime2[1]]}}-{{dateTimeArray2[2][dateTime2[2]]}} {{dateTimeArray2[3][dateTime2[3]]}}:{{dateTimeArray2[4][dateTime2[4]]}}
+           <image class='icon' src='../images/down.png'></image>
+        </view>
+      </picker>
+    </view>  
+  </view>
+
+
+  <!--请假事由  -->
+  <view class='result'>
+    <text>请假事由：</text>
+    <textarea auto-height='{{true}}' style='padding-top:{{detail}};padding-left:{{detail1}}' value="{{evaContent}}" bindinput='charChange' class='resultinput' type='text'></textarea>
+  </view>
+ 
+  <!--审批人  -->
+  <view class='shenpi'>
+    <image src='../images/shenpiren.png'></image>
+    <text>审批人</text>
+  </view>
+  <view class='addshenpi'>
+    <view class='spr' wx:for="{{arr}}" wx:for-item='item' wx:key = "index">
+      <image src='{{item.photo}}'></image>
+      <image class="close" src='../images/close.png' bindtap='remove' data-id='{{item.personId}}'></image>
+      <view>{{item.personName}}</view>
+    </view>
+  
+    <image src='../images/addshenpiren.png' bindtap='shenpiren'></image>
+  </view>
+</view>
+</view>
+</view>
+<!--提交  -->
+<button hover-class='btn-hover' bindtap='TiJiao' 
+  data-starttime='{{dateTimeArray1[0][dateTime1[0]]}}-{{dateTimeArray1[1][dateTime1[1]]}}-{{dateTimeArray1[2][dateTime1[2]]}} {{dateTimeArray1[3][dateTime1[3]]}}:{{dateTimeArray1[4][dateTime1[4]]}}'
+  data-endtime='{{dateTimeArray2[0][dateTime2[0]]}}-{{dateTimeArray2[1][dateTime2[1]]}}-{{dateTimeArray2[2][dateTime2[2]]}} {{dateTimeArray2[3][dateTime2[3]]}}:{{dateTimeArray2[4][dateTime2[4]]}}'
+  >提交
+</button>
+

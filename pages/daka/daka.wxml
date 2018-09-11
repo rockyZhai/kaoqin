@@ -1,0 +1,35 @@
+<!--2.1  考勤打卡  -->
+<view class='title' >
+  <view class='photo'>
+    <image src='{{photo}}'></image>{{personName}}
+  </view>
+  <view>
+    <text>{{day}}</text>
+  </view>
+</view>
+<!--时间  定位地点  -->
+<view bindtap="daykaoqin">
+  <button class='time' bindtap='dakaTime' hover-class='btn-hover' style='background-color:{{btnColor}}; box-shadow:{{boxShadow}}'>
+    <view class='daKaTime'>{{items.name}}</view>
+    <view class='formatDate'>{{today}}</view>
+  </button>
+</view>
+<view class = "position">坐标：{{address}}</view>
+<!--打卡记录  -->
+<view class='dakaJiLuBox'>
+  <view class='dayjilu1' wx:for="{{list}}" wx:key="index" wx:for-item="itemName">
+    <view class='line' wx:if = "{{index!= 0}}"></view>
+    <view class='round'></view>
+    <view class='middle' style='display:flex;'>
+      <view class='timeData'>
+        <view class='timeData_weizhi'>{{itemName.name_dk}} {{itemName.gmt_kssj}}</view>
+        <view class='dakaTime'>打卡时间 {{itemName.gmt_last_update}}</view>
+      </view>
+      <view data-id='{{itemName.code_kqxx}}' data-code='{{itemName.gmt_kssj}}' data-time='{{arr[index]}}' bindtap="{{itemName.status==3 ? 'buka' : '' }}" class="{{itemName.status ==0 ? 'gray' : itemName.status ==1 ? 'green': itemName.status ==2 ? 'pink' : itemName.status==3 ? 'pink' : itemName.status==4 ? 'pink' : '' }}">
+          {{itemName.status == 0 ? "" : itemName.status == 1 ? "正常" : itemName.status == 2 ? "迟到" : itemName.status == 3 ? "缺卡" : itemName.status == 4 ? "早退" : ""}}    
+      </view>  
+    </view>
+    <view class='clear'></view>
+    <view class='weizhi'><image src='../images/adress.png'></image>{{itemName.address_cs}}</view>
+  </view>
+</view>

@@ -1,0 +1,46 @@
+/*通知列表  */
+.shenPiContent{
+  font-size: 14px;
+  text-align: center;
+  color: #999;
+  margin-top: 100rpx;
+}
+.shenPiContent image{
+  width: 96rpx;
+  height: 100rpx;
+  margin-bottom: 40rpx;
+}
+.TZlist{
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  color: #333;
+}
+.TZlist .left{
+  margin-left: 20px;
+  padding: 10px 0; 
+}
+.TZlist image{
+  width:60rpx;
+  
+  height:60rpx;
+  margin:15px 20px 0 0;
+}
+button{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #3399ff;
+  color: #fff;
+  border-radius: 0;
+  height: 55px;
+  line-height: 55px;
+  font-size: 18px;
+  box-shadow: 8px 10px 10px  #ccc;
+  border: 0px groove orange;
+}
+.btn-hover{
+  box-shadow: 5px 6px 10px  #ccc;
+  opacity: .7;
+} 

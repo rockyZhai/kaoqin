@@ -1,0 +1,168 @@
+/*5.出差  */
+page{
+  background-color: #f7f6fc;
+}
+.box{
+  margin: 24px auto 0;
+  font-size: 16px;
+  margin-top: 24px;
+}
+.section{
+  padding-left: 30rpx;
+  height: 84rpx;
+  background-color: #fff;
+  line-height: 84rpx;
+  border-bottom: 1px solid #e0e0e0;
+  justify-content: flex-start;
+  display: flex;
+}
+.section picker{
+  width: 100%;
+} 
+
+.box .tui-picker-content{
+  background-color: #fff;
+  border-bottom: 1px solid #e0e0e0;
+  height:84rpx;
+  padding-left: 20rpx;
+  font-size:16px;
+  line-height: 84rpx;
+}
+.icon{
+  width: 17px;
+  height: 17px;
+  float: right;
+  margin-top: 30rpx;
+  margin-right: 15px; 
+}
+.result{
+  display: flex; 
+  border-bottom: 1px solid #e0e0e0;
+  background-color: #fff;
+  justify-content: flex-start;
+  padding-left: 30rpx;
+  font-size:16px;
+  height: 84rpx;
+}
+.result text{ 
+  font-size:16px;
+  min-width: 80px;
+  max-width: 110px;
+  padding-top: 26rpx;
+  padding-bottom: 20rpx;
+}
+textarea{
+  font-size: 16px;
+  padding-top: 10rpx;
+  padding-bottom:10rpx;
+}
+.shenpi{
+  margin-top: 24px;
+  margin-left: 10px;
+}
+.shenpi image{
+  width: 16px;
+  height: 16px;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+.addshenpi{
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #fff;
+  padding: 10px 0 10px 10px;
+  border: 1px solid #e0e0e0;
+  margin-bottom: 20rpx;
+}
+.addshenpi image{
+  width: 50px;
+  height: 50px;
+}
+button{
+  background-color: #3399ff;
+  color: #fff;
+  font-size: 18px;
+  height: 55px;
+  position: fixed; 
+  bottom: 0;
+  width: 100%;
+  border-radius: 0;
+  line-height: 55px;
+  box-shadow: 8px 10px 10px  #ccc;
+  border: 0px groove orange;
+}
+.btn-hover{
+  box-shadow: 5px 6px 10px  #ccc;
+  opacity: .7;
+} 
+
+
+.spr{
+  font-size: 12px;
+  margin-right: 20rpx;
+  text-align: center;
+}
+.spr image{
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #ccc;
+}
+.spr .close{
+  width: 10px;
+  height: 10px;
+  position: relative;
+  top:-40px;
+  left:-15px;
+
+}
+/*单选框  */
+.radio-group{
+  font-size: 16px;
+  padding-left:24rpx;
+  height: 84rpx;
+  line-height: 84rpx;
+  background-color: #fff;
+  border-bottom: 1px solid #e0e0e0;
+}
+.radio-group radio{
+   transform:scale(0.7);  
+}
+/*同行人  */
+#TongXingRen {
+  border-bottom:1px solid #e0e0e0;
+  background-color:#fff;
+  padding-left:30rpx;
+}
+#TongXingRen .TXname {
+  font-size:16px;
+  min-width:80px;
+  max-width:110px;
+  padding-top:20rpx;
+  padding-bottom:20rpx;
+  float: left;
+}
+#TongXingRen image{
+  width:60rpx;
+  height:60rpx;
+  margin-top:15rpx;
+  float: right;
+}
+
+.TongXingRen{
+  font-size: 16px;
+  margin-right: 20rpx;
+  padding-top:20rpx;
+  padding-bottom:20rpx;
+  float: left;
+}
+.TongXingRen .close{
+  width: 10px;
+  height: 10px;
+  position: relative;
+}
+.swiper-tab-item{
+    width: 30%; 
+    color:#434343;
+}

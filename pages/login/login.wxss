@@ -1,0 +1,83 @@
+.bgs image{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+}
+page{
+  width: 100%;
+  height: 100%;
+}
+form{
+  width: 91.11%;
+  padding: 96rpx auto;
+  background-color: #fff;
+  height: 100px;
+}
+.box .phone{
+  border: 1px solid #e0e0e0;
+}
+.bg{
+  width: 91.11%;
+  background-color: #fff;
+  position: relative;
+  top: 48px;
+  margin: 0 auto;
+  padding-bottom: 80rpx;
+}
+
+form .phone image{
+  width: 16px;
+  height: 16px;
+  top:34rpx;
+  left: 8px;
+  right: 8px; 
+  position: absolute;  
+}
+.bg .logo{
+  width: 40px;
+  height: 40px;
+  margin: 0 auto 32rpx;
+  padding-top: 64rpx;
+}
+.bg .logo image{
+  width: 100%;
+  height: 100%;
+}
+.bg .txt{
+  color: #3399ff;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 auto 48rpx;
+  text-align: center;
+}
+.bg .phone{
+  width: 75%;
+  margin: 0 auto 32rpx;
+  position: relative;
+  border: 1px solid #e0e0e0;
+  height: 96rpx;
+}
+form input{
+  height: 96rpx;
+  padding-left: 30px; 
+  font-size: 16px;
+  display: inline-block;
+  width: 90%; 
+}
+button{
+  background-color: #3399ff;
+  color: #fff;
+  margin-top: 48rpx;
+  width: 75%;
+  border: 0px groove orange;
+  box-shadow: 8px 10px 10px  #ccc;
+  font-size: 20px
+}
+
+.btn-hover{
+  box-shadow: 5px 6px 10px  #ccc;
+  opacity: .7;
+} 
+
+

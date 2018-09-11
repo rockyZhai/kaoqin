@@ -1,0 +1,58 @@
+/*5.设置  */
+page{
+  background-color: #f7f6fc;
+}
+.box{
+  margin: 0 auto;
+  font-size: 16px;
+  margin-top: 24px;
+}
+.section{
+  line-height: 84rpx;
+  margin-bottom: 16px;
+  background-color: #fff;
+}
+.box .section .time{
+  width:100%;
+}
+.box .section .picker{
+  border-bottom: 1px solid #e0e0e0;
+  height:84rpx;
+  padding-left: 10px;
+}
+.icon{
+  width: 24px;
+  height: 24px;
+  float: right;
+  margin-top: 20rpx;
+  margin-right: 4px; 
+}
+.section .scopeTime{
+  height:84rpx;
+  margin-right: 4.44%;
+  float: left;
+}
+button{
+  background-color: #3399ff;
+  color: #fff;
+  font-size: 16px;
+  height: 48px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-radius: 0;
+  box-shadow: 8px 10px 10px  #ccc;
+  border: 0px groove orange;
+}
+.btn-hover{
+  box-shadow: 5px 6px 10px  #ccc;
+  opacity: .7;
+}
+.section__title{
+  padding-left: 15px;
+  float: left;
+}
+.minute{
+  float:right;
+  padding-right:15px;
+}

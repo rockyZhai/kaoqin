@@ -1,0 +1,101 @@
+<!--5.出差  -->
+<view class='content' style='width:100%;height:auto;'> 
+ <view style="display:flex; justify-content: space-between">
+  <view style='width:100%;height:auto;margin-bottom:200rpx;'>
+  <view class='box'>
+    <!--出差人  -->
+    <view class='result' style='border-top:1px solid #e0e0e0; background-color:#f7f6fc;'>
+      <text>出差人：</text>
+      <text>{{personName}}</text>
+    </view>
+     <!--开始时间：  -->
+    <view class="tui-picker-content">
+      <picker mode="multiSelector" value="{{dateTime2}}"  bindchange="changeDateTime1" bindcolumnchange="changeDateTimeColumn1" range="{{dateTimeArray2}}">
+        <view class="tui-picker-detail">
+          开始时间：{{dateTimeArray1[0][dateTime1[0]]}}-{{dateTimeArray1[1][dateTime1[1]]}}-{{dateTimeArray1[2][dateTime1[2]]}} {{dateTimeArray1[3][dateTime1[3]]}}:{{dateTimeArray1[4][dateTime1[4]]}}
+          <image class='icon' src='../images/down.png'></image>
+        </view>
+      </picker>
+    </view>  
+    <!-- 结束时间： -->
+    <view class="tui-picker-content">
+      <picker mode="multiSelector" value="{{dateTime2}}" bindchange="changeDateTime2" bindcolumnchange="changeDateTimeColumn2" range="{{dateTimeArray2}}">
+        <view class="tui-picker-detail">
+           结束时间：{{dateTimeArray2[0][dateTime2[0]]}}-{{dateTimeArray2[1][dateTime2[1]]}}-{{dateTimeArray2[2][dateTime2[2]]}} {{dateTimeArray2[3][dateTime2[3]]}}:{{dateTimeArray2[4][dateTime2[4]]}}
+           <image class='icon' src='../images/down.png'></image>
+        </view>
+      </picker>
+    </view>  
+  </view>
+
+  <!--目的地及单位：  -->
+  <view class='result'>
+     <text style='min-width:115px;max-width:120px;'>目的地及单位：</text> 
+     <textarea auto-height='{{true}}' style='padding-top:{{detail}};padding-left:{{detail1}}' value="{{chuChaiaddress}}" class='resultinput' type='text' bindinput='chuChaiaddress'>
+     </textarea> 
+  </view>
+
+  <!--出行方式  -->
+  <radio-group class="radio-group" bindchange="radioChange">
+  出行方式：
+    <label wx:for="{{items}}" wx:key='index' class="radio" data-current="{{item.id}}" bindtap="clickTab">
+      <radio value="{{item.id}}" checked="{{item.checked}}" data-current="{{item.id}}" bindtap="clickTab"/>{{item.value}}
+    </label>
+  </radio-group>
+
+ 
+  <!--车牌及驾驶员：  -->
+  <view class='result' hidden="{{!isShow}}">
+    <text style='min-width:115px;max-width:120px;'>车牌及驾驶员：</text>
+    <textarea auto-height='{{true}}' style='padding-top:{{detail}};padding-left:{{detail1}}' value="{{cp_jsy}}" class='resultinput' type='text' bindinput='cp_jsy' >
+    </textarea>
+  </view>
+
+  <!--交通工具：  -->
+  <view class='result' hidden="{{isShow}}">
+    <text style='min-width:80px;max-width:110px;'>交通工具：</text>
+    <textarea auto-height='{{true}}' style='padding-top:{{detail}};padding-left:{{detail1}}' value="{{name_jtgj}}" class='resultinput' type='text' bindinput='name_jtgj'></textarea>
+  </view>
+ 
+
+
+  <!--出差事由  -->
+  <view class='result'>
+    <text>出差事由：</text>
+    <textarea auto-height='{{true}}' style='padding-top:{{detail}};padding-left:{{detail1}}' value="{{evaContent}}" bindinput='evaContent' class='resultinput' type='text'></textarea>
+  </view>
+
+  <!--同行人  -->
+   <view id='TongXingRen'>
+    <text class='TXname'>同行人：</text>
+    <view class='TongXingRen' wx:for="{{TongXunLuarr}}" wx:for-item='item' wx:key= "index">
+      <text>{{item.personName}}</text>  
+      <image class="close" style='width:20rpx;height:20rpx;margin-top:0' src='../images/close.png' bindtap='removeTongXingRen' data-id='{{item.personId}}'></image> 
+    </view> 
+    <image src='../images/nextMonth.png' bindtap='TongXingRen'></image>
+    <view style='clear:both'></view>
+  </view>
+  
+  <!--审批人  -->
+  <view class='shenpi'>
+    <image src='../images/shenpiren.png'></image>
+    <text>审批人</text>
+  </view>
+  <view class='addshenpi'>
+    <view class='spr' wx:for="{{arr}}" wx:for-item='item' wx:key = "index">
+      <image src='{{item.photo}}'></image>
+      <image class="close" src='../images/close.png' bindtap='remove' data-id='{{item.personId}}'></image>
+      <view>{{item.personName}}</view>
+    </view>
+    <image src='../images/addshenpiren.png' bindtap='shenpiren'></image>
+  </view>
+</view>
+</view>
+</view>
+<!--提交  -->
+<button hover-class='btn-hover' bindtap='TiJiao' 
+  data-starttime='{{dateTimeArray1[0][dateTime1[0]]}}-{{dateTimeArray1[1][dateTime1[1]]}}-{{dateTimeArray1[2][dateTime1[2]]}} {{dateTimeArray1[3][dateTime1[3]]}}:{{dateTimeArray1[4][dateTime1[4]]}}'
+  data-endtime='{{dateTimeArray2[0][dateTime2[0]]}}-{{dateTimeArray2[1][dateTime2[1]]}}-{{dateTimeArray2[2][dateTime2[2]]}} {{dateTimeArray2[3][dateTime2[3]]}}:{{dateTimeArray2[4][dateTime2[4]]}}'
+  >提交
+</button>
+

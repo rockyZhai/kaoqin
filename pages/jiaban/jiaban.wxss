@@ -1,0 +1,109 @@
+/*6.加班  */
+page{
+  background-color: #f7f6fc
+}
+.box{
+  margin: 24px auto 0;
+  font-size: 16px;
+  margin-top: 24px;
+}
+
+picker{
+  width: 100%;
+} 
+.box .tui-picker-content{
+  background-color: #fff;
+  border-bottom: 1px solid #e0e0e0;
+  height:84rpx;
+  padding-left: 20rpx;
+  font-size:16px;
+  line-height: 84rpx;
+}
+.icon{
+  width:17px;
+  height:17px;
+  float:right;
+  margin-top:30rpx;
+  margin-right:15px;
+}
+.result{
+  display: flex;
+  border-bottom: 1px solid #e0e0e0;
+  background-color: #fff;
+  justify-content: flex-start;
+  padding-left: 30rpx;
+}
+.result text{ 
+  font-size:16px;
+  min-width: 80px;
+  max-width: 110px;
+  padding-top: 22rpx;
+  padding-bottom: 20rpx;
+}
+textarea{
+  font-size: 16px;
+  padding-top: 10rpx;
+  padding-bottom:10rpx;
+}
+.shenpi{
+  margin-top: 24px;
+  margin-left: 10px;
+}
+.shenpi image{
+  width: 16px;
+  height: 16px;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+.addshenpi{
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #fff;
+  padding: 10px 0 10px 10px;
+  border: 1px solid #e0e0e0;
+}
+.addshenpi image{
+  width: 50px;
+  height: 50px;
+  
+}
+button{
+  background-color: #3399ff;
+  color: #fff;
+  font-size: 18px;
+  height: 55px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-radius: 0;
+  line-height: 55px;
+  box-shadow: 8px 10px 10px  #ccc;
+  border: 0px groove orange;
+}
+.btn-hover{
+  box-shadow: 5px 6px 10px  #ccc;
+  opacity: .7;
+}
+
+
+.spr{
+  font-size: 12px;
+  margin-right: 20rpx;
+  text-align: center;
+  margin-bottom:10px;
+}
+.spr image{
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #ccc;
+}
+.spr .close{
+  width: 10px;
+  height: 10px;
+  position: relative;
+  top:-40px;
+  left:-15px;
+
+}

@@ -1,0 +1,69 @@
+<!--8.2审批详情流程中  -->
+<view class='content' style='width:100%;height:auto;'> 
+ <view style="display:flex; justify-content: space-between">
+    <view style='width:100%;height:auto;margin-bottom:200rpx;'>
+      <block  wx:if="{{types==5}}">
+        <view class='title'>
+          <view class='photo'>
+            <image src='../images/small_photo.png'></image>{{items.personName}}
+          </view>
+          <view>
+            <text>{{items.gmt_create}}</text>
+          </view>
+        </view>
+        <view class='time'>类型：{{types == 5 ? "出差" : ""}}</view>
+        <view class='result'>开始时间：{{items.gmt_kssj}}</view>
+        <view class='result' style="{{items.types == 4 ? 'display:none' : 'display:block'}}">结束时间：{{items.gmt_jjsj}}</view>
+        <view class='result'>目的地及单位：{{items.unit}}</view>
+        <view class='result'>出行方式：{{items.cx_type==0 ? "单位派车" : items.cx_type==1 ? "公共交通" : ""}}</view>
+        <view class='result' style="{{items.cp_jsy=='' ? 'display:none' : 'display:block'}}">车牌及驾驶员：{{items.cp_jsy}}</view>
+        <view class='result' style="{{items.name_jtgj=='' ? 'display:none' : 'display:block'}}">交通工具：{{items.name_jtgj}}</view>
+        <view class='result'>出差事由：{{items.yy}}</view>
+        <view class='result'>
+          <text class='txperson'>同行人：{{txlist}}</text>
+        </view> 
+      </block >
+
+      <block  wx:else>
+        <view class='title'>
+          <view class='photo'>
+            <image src='../images/small_photo.png'></image>{{items.personName}}
+          </view>
+          <view>
+            <text>{{items.gmt_create}}</text>
+          </view>
+        </view>
+        <view class='time'>类型：
+          {{items.type == 1 ? "请假" : items.type == 3 ? "加班" : items.type == 4 ? "补卡" : ""}}
+        </view>
+        <view class='result'>开始时间：{{items.gmt_kssj}}</view>
+        <view class='result' style="{{items.type == 4 ? 'display:none' : 'display:block'}}">结束时间：{{items.gmt_jjsj}}</view>
+        <view class='result'>理由：{{items.yy}}</view>
+      </block >
+
+      <!--审批流程  -->
+      <view class='dakaJiLuBox'>
+        <!--第一次审批  -->
+        <view class='dayjilu1' wx:for="{{list}}" wx:key="index" wx:for-item="itemName">
+          <view class='round'></view>
+          <view class='line' wx:if = "{{index!= 0}}"></view>
+          <view class='middle'>
+            <view class='list'>
+              <view class='name'>{{itemName.personName}}</view>
+              <view class="{{itemName.status == 0 ? 'gray' : itemName.status == 1 ? 'green': itemName.status == 2 ? 'pink' : '' }}">
+                {{itemName.status == 0 ? "待审批" : itemName.status == 1 ? "通过" : itemName.status == 2 ? "驳回" : ""}}    
+              </view>           
+            </view>
+            <view class='weizhi'>{{itemName.gmt_last_update}}</view> 
+          </view>
+          <view class='clear'></view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<!--提交按钮  -->
+<view class='btn'>
+  <button bindtap="refuse" hover-class="btn-hover" class='jujue' data-id='2' disabled='{{disabled}}'>拒绝</button>
+  <button bindtap="agree" hover-class="btn-hover" class='tongyi' data-id='1' disabled='{{disabled}}'>同意</button>
+</view>

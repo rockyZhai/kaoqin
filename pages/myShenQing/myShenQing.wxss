@@ -1,0 +1,90 @@
+/*<!--8.1我的申请  -->  */
+.shenPiContent{
+  font-size: 14px;
+  text-align: center;
+  color: #999;
+  margin-top: 100rpx;
+}
+.shenPiContent image{
+  width: 96rpx;
+  height: 100rpx;
+  margin-bottom: 40rpx;
+}
+.list{
+  padding:15px;
+  border-bottom: 1px solid #e0e0e0;
+  display: flex;
+  justify-content: space-between;
+}
+.list .result{
+  font-size: 16px;
+  margin-left: 16px;
+}
+.list .liuchen{
+  font-size: 12px;
+  border-radius: 10px;
+  width: 50px;
+  height: 16px;
+  color: #fff;
+  background-color: #ccc;
+  margin-left: 16px;
+  text-align: center;
+  display: inline-block;
+}
+.list .time{
+  color: #999;
+  font-size: 12px;
+  margin-right: 16px;
+}
+.list .TongGuo{
+  width: 40px;
+  height: 16px;
+  background-color: #8bc34a;
+}
+.list .juJue{
+  background-color: #ff6666;
+  width: 40px;
+  height: 16px;
+}
+
+
+
+.list .gray{
+  font-size: 12px;
+  color: #fff;
+  width: 40px;
+  height: 16px;
+  background-color: #ccc;
+  border-radius:16rpx;
+  text-align: center;
+  margin-left:10px;
+  line-height: 16px;
+  margin-top: 3px;
+  float:left;
+}
+.list .green{
+  font-size: 12px;
+  color: #fff;
+  width: 40px;
+  height: 16px;
+  background-color: #8bc34a;
+  border-radius:16rpx;
+  text-align: center;
+  margin-left:10px;
+  line-height: 16px;
+  margin-top: 3px;
+  float:left;
+}
+.list .pink{
+  font-size: 12px;
+  color: #fff;
+  width: 40px;
+  height: 16px;
+  background-color: #ff6666;
+  border-radius:16rpx;
+  text-align: center;
+  margin-left:10px;
+  line-height: 16px;
+  margin-top: 3px;
+  float:left;
+}

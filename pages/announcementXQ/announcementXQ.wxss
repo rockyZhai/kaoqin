@@ -1,0 +1,28 @@
+/*9.2公告详情  */
+.announcementXQ{
+  background-color: #f7f6fc;
+  padding-left: 30rpx;
+}
+.announcementXQ .title{
+  font-size: 23px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 16rpx;
+  padding-top: 20rpx;
+}
+.announcementXQ .dept{
+  font-size: 12px;
+  color: #333;
+}
+.announcementXQ .time{
+  font-size: 12px;
+  color: #999999;
+  margin-bottom: 32rpx;
+  padding-bottom: 20rpx;
+}
+.content{
+  font-size: 18px;
+  margin-bottom: 50rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx
+}

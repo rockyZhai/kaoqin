@@ -1,0 +1,148 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "1.7.0",
+	"appid": "wxa31e43ce2aeb43a6",
+	"projectname": "%E5%AE%89%E5%BE%BD%E8%80%83%E5%8B%A4",
+	"svr": "",
+	"client": "",
+	"qcloudRoot": "",
+	"miniprogramRoot": "",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"miniprogram": {
+			"current": 9,
+			"list": [
+				{
+					"id": 0,
+					"name": "qingjia",
+					"pathName": "pages/qingJia/qingJia",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "qingjia",
+					"pathName": "pages/jiaban/jiaban",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "index",
+					"pathName": "pages/index/index",
+					"query": ""
+				},
+				{
+					"id": 3,
+					"name": "login",
+					"pathName": "pages/login/login",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "kaoQinRiLi",
+					"pathName": "pages/kaoQinRiLi/kaoQinRiLi",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "ModifyThePassword",
+					"pathName": "pages/ModifyThePassword/ModifyThePassword",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "TZlist",
+					"pathName": "pages/TZlist/TZlist",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "fabuTZ",
+					"pathName": "pages/fabuTZ/fabuTZ",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "prev",
+					"pathName": "pages/prev/prev",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "buka",
+					"pathName": "pages/buka/buka",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "set",
+					"pathName": "pages/set/set",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "TJbaoBiao",
+					"pathName": "pages/TJbaoBiao/TJbaoBiao",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "fabuTZ",
+					"pathName": "pages/fabuTZ/fabuTZ",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "TZcontent",
+					"pathName": "pages/TZcontent/TZcontent",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "shenpi",
+					"pathName": "pages/shenpi/shenpi",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "kaoQinTJ",
+					"pathName": "pages/kaoQinTJ/kaoQinTJ",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "daka",
+					"pathName": "pages/daka/daka",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "出差",
+					"pathName": "pages/chuChai/chuChai",
+					"query": ""
+				}
+			]
+		}
+	}
+}

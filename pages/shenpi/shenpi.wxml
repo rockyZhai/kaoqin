@@ -1,0 +1,24 @@
+<!--8.1我的审批  -->
+<block wx:if="{{items==''}}">
+   <view class='shenPiContent'>
+    <image src='../images/No_shenpi.png'></image>
+    <view>暂时没有审批内容</view>
+  </view>
+</block>
+<block wx:else>
+  <view class='list' wx:for='{{items}}' wx:for-item="itemName" wx:key = "index" data-id='{{itemName.code_sppz}}' data-iscontroller='{{itemName.isController}}' data-type="{{itemName.type}}" bindtap='qingjiashenpi' >
+    <view class='left'>
+      <text class='result'>{{itemName.name_qjlx}}申请</text>
+      <view class="{{itemName.status == 0 ? 'gray' : itemName.status == 1 ? 'green': itemName.status == 2 ? 'pink' : '' }}">
+        {{itemName.status == 0 ? "待审核" : itemName.status == 1 ? "已审批" : itemName.status == 2 ? "已审批" : ""}}
+      </view>
+    </view>
+    <view class='right'>
+      <text class='time'>{{itemName.gmt_create}}</text>
+    </view>
+  </view>
+</block>
+
+
+
+
